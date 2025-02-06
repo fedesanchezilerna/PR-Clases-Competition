@@ -22,8 +22,7 @@ public class CarTest {
         System.out.println("\nCar 1 Model updated: " + car1.getModel());
         System.out.println("Car 1 ID updated: " + car1.getId());
         System.out.println(car1);
-        System.out.println(car1);
-        System.out.println(car1);
+        System.out.println(car2);
 
         System.out.println("Next Car ID: " + Car.getIdNext());
     }

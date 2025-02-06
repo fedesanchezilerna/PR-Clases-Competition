@@ -43,7 +43,7 @@ public class Car {
     }
 
     private String generateId() {
-        String code = "CAR" + String.format("%05d", nextId++);
+        String code = "CAR" + String.format("%04d", nextId++);
         String x = brand.substring(0, 1).toUpperCase();
         String y = model.substring(0, 1).toUpperCase();
         return code + x + y;
@@ -63,7 +63,7 @@ public class Car {
 
     public void setBrand(String brand) {
         this.brand = brand;
-        this.id = generateId(); // Update ID if the Brand is changed
+        this.id = generateId();  // Update ID when brand changes
     }
 
     public String getModel() {
@@ -72,7 +72,7 @@ public class Car {
 
     public void setModel(String model) {
         this.model = model;
-        this.id = generateId();
+        this.id = generateId();  // Update ID when model changes
     }
 
     public short getYear() {
@@ -136,7 +136,7 @@ public class Car {
     }
 
     public static String getIdNext() {
-        return "CAR" + String.format("%05d", nextId);
+        return "CAR" + String.format("%04d", nextId);
     }
 
     @Override

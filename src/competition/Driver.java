@@ -20,7 +20,7 @@ public class Driver {
 
     public void setName(String name) {
         this.name = name;
-        this.id = generateID(); // Update ID after changing name - ASK IF THIS APPLIES
+        this.id = generateID();  // Update ID when name changes
     }
 
     public String getId() {
