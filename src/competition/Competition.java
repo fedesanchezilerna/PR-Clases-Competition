@@ -23,7 +23,7 @@ public class Competition {
 
         for (Race race : races) {
             race.startRace();
-            results.append(race.toString()).append("\n");
+            results.append(race).append("\n");
         }
         return results.toString();
     }
